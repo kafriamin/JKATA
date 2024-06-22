@@ -5,4 +5,4 @@
 build
 
 # Ignote java class file
-bin/*.class
+bin
