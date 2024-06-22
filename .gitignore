@@ -4,5 +4,5 @@
 # Ignore Gradle build output directory
 build
 
-# Ignote java class file
+# Ignore class file
 bin
