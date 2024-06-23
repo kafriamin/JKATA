@@ -18,8 +18,8 @@ just on the algorithm and data structure code that you want to write.
 ## Setting up
 clone this git repo into your desired directory / folder
 
-```bash
-git clone https://github.com/kafriamin/jKataUm.git
+```
+git clone https://github.com/kafriamin/JKATA.git
 ```
 
 if you are using an IDE like `Netbeans`, `IntelliJ`, `Eclipse`, `etc`, 
