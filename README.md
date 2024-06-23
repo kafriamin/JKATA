@@ -14,6 +14,7 @@ just on the algorithm and data structure code that you want to write.
 - Selection Sort
 - Merge Sort
 - Linked List
+- Stack
 
 ## Setting up
 clone this git repo into your desired directory / folder
@@ -50,7 +51,6 @@ gradle listKata
 ```
 
 ## Feature Coming Up
-- Stack
 - Queue
 - Priority Queue
 - Graph
