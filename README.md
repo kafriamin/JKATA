@@ -13,6 +13,7 @@ just on the algorithm and data structure code that you want to write.
 - Insertion Sort
 - Selection Sort
 - Merge Sort
+- Linked List (NEW!)
 
 ## Setting up
 clone this git repo into your desired directory / folder
@@ -39,11 +40,16 @@ After you've write your code, head over to your built in IDE terminal, and run
 gradle test --tests 'kata.Kata.bubbleSort'
 ```
 > [!NOTE]
-> Replace bubbleSort with the name of the function that you want to test. mainly the
-algorithm name since it matches the function name.
+> Replace bubbleSort with your target test. If you're unsure what is your target,
+look the instruction below
+
+To get available `target` run
+
+```bash
+gradle listKata
+```
 
 ## Feature Coming Up
-- Linked List
 - Stack
 - Queue
 - Priority Queue

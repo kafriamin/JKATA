@@ -1,6 +1,7 @@
 package kata;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.DisplayName;
@@ -59,5 +60,52 @@ public class Kata {
         int[] expected = { 11, 12, 22, 25, 34, 64, 90 };
         assertArrayEquals(expected, arr);
     }
+
+        @Test
+    void linkedList() {
+        kata.LinkedList<Integer> ll = new kata.LinkedList<>();
+        int arr[] = { 64, 34, 25, 12, 22, 90, 11 }; // len = 7
+        for (int i = 0; i < arr.length; i++) {
+            ll.addLast(arr[i]);
+        }
+
+        // Get Initial info
+        assertEquals(arr.length, ll.getSize());
+        assertEquals(arr[0], ll.getFirst());
+        assertEquals(arr[arr.length - 1], ll.getLast());
+
+        // Remove last element 
+        // len = 6
+        int last = ll.removeLast();
+        assertEquals(arr[arr.length - 1], last);
+        assertEquals(6, ll.getSize());
+        assertEquals(90, ll.getLast());
+
+        // Add to first
+        // Len = 7
+        ll.addFirst(33);
+        assertEquals(33, ll.getFirst());
+        assertEquals(7, ll.getSize());
+
+        // Remove First
+        // Len = 6
+        int first = ll.removeFirst();
+        assertEquals(33, first);
+        assertEquals(6, ll.getSize());
+
+        // Removed Second Index
+        // Len = 5
+        int removed = ll.remove(2);
+        assertEquals(arr[2], removed);
+        assertEquals(5, ll.getSize());
+
+        // Insert at second index
+        // Len = 6
+        ll.insert(2, arr[2]);
+        int sec = ll.get(2);
+        assertEquals(arr[2], sec);
+
+    }
+
 
 }
