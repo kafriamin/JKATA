@@ -41,7 +41,7 @@ gradle test --tests 'kata.Kata.bubbleSort'
 ```
 > [!NOTE]
 > Replace bubbleSort with your target test. If you're unsure what is your target,
-look the instruction below
+look at the instruction below
 
 To get available `target` run
 
