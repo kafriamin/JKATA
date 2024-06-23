@@ -11,12 +11,13 @@ public class Main {
                 "selectionSort",
                 "mergeSort",
                 "linkedList",
+                "stack"
         };
         System.out.println("Available Module: ");
         for (String module : moduleName) {
             System.out.println(module);
         }
         System.out.println();
-        System.out.println("Run 'gradle test --tests kata.Kata.[moduleName]' to test your code");
+        System.out.println("Run 'gradle test --tests kata.Kata.moduleName' to test your code");
     }
 }
