@@ -6,6 +6,8 @@ just on the algorithm and data structure code that you want to write.
 > [!IMPORTANT]
 > This project is not fully finish
 
+https://github.com/kafriamin/JKATA/assets/171482530/78501c1b-63f6-4cf5-b8ee-a125da2d0088
+
 ## Available Algorithm
 - Linear Search
 - Binary Search
