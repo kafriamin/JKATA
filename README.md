@@ -13,7 +13,7 @@ just on the algorithm and data structure code that you want to write.
 - Insertion Sort
 - Selection Sort
 - Merge Sort
-- Linked List (NEW!)
+- Linked List
 
 ## Setting up
 clone this git repo into your desired directory / folder
