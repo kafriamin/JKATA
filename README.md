@@ -1,5 +1,5 @@
-# JKataUM
-JKataUM is a kata machine program that will help you practice your Data Structure
+# JKATA
+JKATA is a kata machine program that will help you practice your Data Structure
 and Algorithm skills without needing to write your own test. So you can focus on
 just on the algorithm and data structure code that you want to write.
 
