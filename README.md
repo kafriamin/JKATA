@@ -54,6 +54,10 @@ gradle listKata
 - Queue
 - Priority Queue
 - Graph
+- Djikstra
+- Binary Search Tree
+- Quicksort
+- Two Crystal Ball (LET'S GOOOO!)
 
 > [!NOTE]
 > Please submit an issue if you've encountered any bug
