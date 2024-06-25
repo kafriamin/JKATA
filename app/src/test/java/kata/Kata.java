@@ -2,6 +2,7 @@ package kata;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.DisplayName;
@@ -61,9 +62,11 @@ public class Kata {
         assertArrayEquals(expected, arr);
     }
 
-        @Test
+    @Test
     void linkedList() {
         kata.LinkedList<Integer> ll = new kata.LinkedList<>();
+        assertNull(ll.getFirst());
+        assertNull(ll.removeFirst());
         int arr[] = { 64, 34, 25, 12, 22, 90, 11 }; // len = 7
         for (int i = 0; i < arr.length; i++) {
             ll.addLast(arr[i]);
@@ -74,7 +77,7 @@ public class Kata {
         assertEquals(arr[0], ll.getFirst());
         assertEquals(arr[arr.length - 1], ll.getLast());
 
-        // Remove last element 
+        // Remove last element
         // len = 6
         int last = ll.removeLast();
         assertEquals(arr[arr.length - 1], last);
@@ -107,5 +110,44 @@ public class Kata {
 
     }
 
+        @Test
+    void stack() {
+        kata.Stack<Integer> s = new kata.Stack<>();
+        int arr[] = { 64, 34, 25, 12, 22, 90, 11 }; // len = 7
+        for (int i = 0; i < arr.length; i++) {
+            s.push(arr[i]);
+        }
+
+        assertEquals(arr.length, s.getSize());
+
+        s.push(33);
+        assertEquals(33, s.peek());
+        assertEquals(arr.length + 1, s.getSize());
+
+        int popopopopo = s.pop();
+        assertEquals(33, popopopopo);
+        assertEquals(arr.length, s.getSize());
+    }
+
+
+    @Test
+    void queue() {
+        kata.Queue<Integer> q = new kata.Queue<>();
+        assertNull(q.dequeue());
+        int arr[] = { 64, 34, 25, 12, 22, 90, 11 }; // len = 7
+        for (int i = 0; i < arr.length; i++) {
+            q.enqueue(arr[i]);
+        }
+        assertEquals(arr.length, q.getSize());
+
+        int d = q.dequeue();
+        assertEquals(11, d);
+
+        int d2 = q.dequeue();
+        assertEquals(90, d2);
+
+        assertEquals(5, q.getSize());
+
+    }
 
 }

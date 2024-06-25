@@ -52,7 +52,8 @@ task listKata {
                 "selectionSort",
                 "mergeSort",
                 "linkedList",
-                "stack"
+                "stack",
+                "queue"
         ]
         println "Available Module: "
         moduleName.each { module ->

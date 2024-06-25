@@ -1,8 +1,5 @@
 package kata;
 
-class Node<T> {
-}
-
 public class Stack<T> {
     public Stack() {
     }
@@ -11,12 +8,15 @@ public class Stack<T> {
     }
 
     public T pop() {
+        return null;
     }
 
     public T peek() {
+        return null;
     }
 
     public int getSize() {
+        return 0;
     }
 
 }
