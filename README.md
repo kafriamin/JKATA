@@ -47,6 +47,11 @@ gradle test --tests 'kata.Kata.bubbleSort'
 > Replace bubbleSort with your target test. If you're unsure what is your target,
 look at the instruction below
 
+> [!IMPORTANT]
+> When running the test, it will only give the stack trace for compile time error,
+so if the build is unsuccessful and the it does not give a stack trace
+there is more likely that your code is wrong
+
 To get available `target` run
 
 ```bash
