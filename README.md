@@ -54,7 +54,6 @@ gradle listKata
 ```
 
 ## Feature Coming Up
-- Priority Queue
 - Graph
 - Djikstra
 - Binary Search Tree
