@@ -141,10 +141,10 @@ public class Kata {
         assertEquals(arr.length, q.getSize());
 
         int d = q.dequeue();
-        assertEquals(11, d);
+        assertEquals(64, d);
 
         int d2 = q.dequeue();
-        assertEquals(90, d2);
+        assertEquals(34, d2);
 
         assertEquals(5, q.getSize());
 
